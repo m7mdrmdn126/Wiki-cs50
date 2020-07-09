@@ -1,0 +1,29 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block style %}
+  <link href="{% static 'encyclopedia/index.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+  <div class="ind">
+    <form class="search" action="{% url 'search' %}">
+      <input type="text" class="search-bar" name="e_name">
+      <input type="submit" class="submit-btn">
+    </form>
+
+    <h2> All The Entries </h2>
+
+    <ul>
+      {% for entry in entries %}
+        <li><a href="{% url 'entry' entry %}"> {{entry}} </a></li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+{% endblock %}

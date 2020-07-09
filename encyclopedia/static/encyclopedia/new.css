@@ -1,0 +1,72 @@
+h2{
+  position: absolute;
+  top: 15%;
+  left: 45%;
+}
+
+
+.tit{
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  outline: None;
+  border: None;
+  border-bottom: 2px solid #596e79;
+  padding: 2px;
+}
+
+.tit:focus{
+  outline: none;
+  border-bottom: 2px solid #2bb2bb;
+  box-shadow: 5px 5px 20px 10px #e6e6ea;
+}
+
+textarea{
+  border: none;
+  position: absolute;
+  margin-top: 50px;
+  left: 15%;
+  width: 70%;
+  height: 40vh;
+  border-radius: 5px;
+  border: 2px solid #596e79;
+  outline: none;
+}
+
+textarea:focus{
+  outline: none;
+  border: 2px solid #2bb2bb;
+  box-shadow: 20px 20px 20px 10px #e6e6ea;
+}
+
+
+input[type=submit]{
+  position: absolute;
+  border-radius: 20px;
+  border: none;
+  border: 2px solid #596e79;
+  padding: 5px 0;
+  top: 400px;
+  left: 15%;
+  width: 70%;
+  outline: none;
+}
+
+input[type=submit]:hover{
+  outline: none;
+  border: 2px solid #2bb2bb;
+  box-shadow: 20px 20px 20px 10px #e6e6ea;
+}
+
+
+
+
+
+
+
+form{
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 70%;
+}

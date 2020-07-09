@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+    {{entry_title}}
+{% endblock %}
+
+{% block style %}
+  <link href="{% static 'encyclopedia/entry.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+  <h2 class="entry_title"> {{entry_title}} </h2>
+
+  <p class="entry_data">{{entry_data}}</p>
+
+  <a href="{% url 'edit' entry_title %}" class="sub" method="post"> Edit </a>
+
+{% endblock %}

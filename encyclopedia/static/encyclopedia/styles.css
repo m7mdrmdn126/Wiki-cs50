@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.nav{
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  background: #e6e6ea;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 10px 10px 30px 0 #e6e6ea;
+}
+
+
+.nav .links{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 35%;
+  right: 10%;
+  top: 15px;
+}
+
+
+
+.nav a{
+  cursor: pointer;
+}
+
+a:hover{
+  transform: scale(1.05);
+}
+
+
+li:hover{
+  transform: scale(1.05);
+}
+
+
+
+
+
+.nav h2{
+  position: absolute;
+  top: 10px;
+  left: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:700px) {
+  .nav .links{
+    width: 60%;
+  }
+
+  h2{
+    font-size: 24px;
+  }
+
+
+
+}

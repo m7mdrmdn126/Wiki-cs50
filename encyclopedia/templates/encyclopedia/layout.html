@@ -1,0 +1,31 @@
+{% load static %}
+{% csrf_token %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet">
+        {% block style %}{% endblock %}
+    </head>
+    <body>
+        <div class="nav">
+          <h2> Wiki </h2>
+
+          <div class="links">
+            <a href="{% url 'index' %}"> Home </a>
+            <a href=" {% url 'new' %}"> New Entry </a>
+            <a href="{% url 'random_entry' %}"> Random Entry </a>
+
+          </div>
+        </div>
+
+        {% block body %}
+
+
+        {% endblock %}
+
+    </body>
+</html>
